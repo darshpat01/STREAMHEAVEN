@@ -1,12 +1,16 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
+import Gallery from "./Components/Body/Gallery";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Header />
+      <div className="px-4">
+        <Header />
+        <Gallery />
+      </div>
     </div>
   );
 }

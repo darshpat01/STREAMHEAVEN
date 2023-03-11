@@ -5,7 +5,7 @@ import "./Header.css";
 function Header() {
   return (
     <>
-      <div className="flex pt-20 px-4">
+      <div className="flex pt-20">
         <div className="basis-1/2">
           <h1 className="text-6xl font-bold uppercase ">
             play, compete, follow popular streamers
