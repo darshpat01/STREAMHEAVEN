@@ -17,7 +17,7 @@ function Navbar() {
   };
   return (
     <div className="fixed w-[100%] z-40 bg-opacity-10 backdrop-blur-sm ">
-      <ul className="flex flex-row container mx-auto xl:py-2 items-center">
+      <ul className="flex flex-row px-4 mx-auto xl:py-2 items-center">
         <div className="flex items-center">
           <span className="pr-3">
             <SiRiotgames size={20} />
