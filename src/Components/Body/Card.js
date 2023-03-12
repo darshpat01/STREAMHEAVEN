@@ -1,29 +1,25 @@
 import React from "react";
 
-function Card() {
+function Card({ title, thumbnail, name, dp }) {
   return (
     <>
-      <div className="flex-col">
-        <div className="overflow-hidden pb-2">
+      <div className="flex-col p-2">
+        <div className="overflow-hidden pb-1">
           <img
-            src="https://picsum.photos/500/500"
+            src={thumbnail}
             alt="img"
             className="w-[20em] h-[12em] rounded-[20px]"
           />
         </div>
         <div className="pl-1">
-          <h1 className="text-xl font-bold">Pumpkin Party in Orizona</h1>
+          <h1 className="text-lg font-bold">{title}</h1>
         </div>
-        <div className="flex pl-1">
-          <div>
-            <img
-              src="https://picsum.photos/200/300"
-              alt="img"
-              className="w-10 h-10"
-            />
+        <div className="flex pl-1 items-center">
+          <div className="pr-2">
+            <img src={dp} alt="img" className="w-8 h-8 rounded-full" />
           </div>
           <div>
-            <p>John Doe</p>
+            <p className="text-sm font-semibold">{name}</p>
           </div>
         </div>
       </div>

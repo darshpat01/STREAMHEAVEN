@@ -14,7 +14,7 @@ function Header() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           </p>
         </div>
-        <div className="basis-1/2 px-4">
+        <div className="basis-1/2 px-6">
           <div className="player-wrapper">
             <ReactPlayer
               url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
