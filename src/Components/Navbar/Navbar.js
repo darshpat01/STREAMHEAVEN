@@ -4,6 +4,7 @@ import { SiRiotgames } from "react-icons/si";
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineMessage, AiOutlineBell } from "react-icons/ai";
 import { InputGroup, InputLeftElement, Input } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const navitemStyle = "text-navItemColor text-sm";
 const navItemTextStyle = "hover:text-navItemColor text-sm uppercase";
@@ -16,13 +17,15 @@ function Navbar() {
     }
   };
   return (
-    <div className="fixed w-[100%] z-40 bg-opacity-10 backdrop-blur-sm ">
+    <div className="fixed w-[100%] z-40 bg-opacity-10 backdrop-blur-lg ">
       <ul className="flex flex-row px-4 mx-auto xl:py-2 items-center">
         <div className="flex items-center">
           <span className="pr-3">
             <SiRiotgames size={20} />
           </span>
-          <li className=" p-1 m-1 text-2xl pr-4 uppercase">CipherSchools</li>
+          <Link to="/">
+            <li className=" p-1 m-1 text-2xl pr-4 uppercase">CipherSchools</li>
+          </Link>
         </div>
 
         <NavItem className="auto" onClick={() => handleClickScroll("About")}>
