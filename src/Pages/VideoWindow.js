@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { RiShareForwardLine } from "react-icons/ri";
-import { AiOutlineLike } from "react-icons/ai";
+import { AiOutlineLike, AiOutlineEye } from "react-icons/ai";
+import Comments from "../Components/Comments/Comments";
 
 const gamingVideos = [
   {
@@ -40,8 +41,12 @@ function VideoWindow() {
                 height="100%"
               />
             </div>
-            <div>
+            <div className="flex items-center">
               <h1 className="text-2xl font-semibold pt-4">{video.title}</h1>
+              <div className="ml-auto flex items-center">
+                <AiOutlineEye size={20} />
+                <p className="pl-1 text-sm">102K</p>
+              </div>
             </div>
             <div className="flex pt-2 items-center">
               <div>
@@ -84,6 +89,7 @@ function VideoWindow() {
                 </button>
               </div>
             </div>
+            <Comments />
           </div>
         </div>
       </div>
