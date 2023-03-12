@@ -5,6 +5,7 @@ import { FiMoreHorizontal } from "react-icons/fi";
 import { RiShareForwardLine } from "react-icons/ri";
 import { AiOutlineLike, AiOutlineEye } from "react-icons/ai";
 import Comments from "../Components/Comments/Comments";
+import SideSuggestions from "../Components/SideSuggestions/SideSuggestions";
 
 const gamingVideos = [
   {
@@ -31,8 +32,8 @@ function VideoWindow() {
   return (
     <>
       <div className="pt-20 px-5">
-        <div className="flex">
-          <div className="p-4 basis-3/4">
+        <div className="flex flex-wrap">
+          <div className="p-3 basis-[65%]">
             <div className="player-wrapper">
               <ReactPlayer
                 url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
@@ -41,8 +42,8 @@ function VideoWindow() {
                 height="100%"
               />
             </div>
-            <div className="flex items-center">
-              <h1 className="text-2xl font-semibold pt-4">{video.title}</h1>
+            <div className="flex items-center pt-4">
+              <h1 className="text-2xl font-semibold ">{video.title}</h1>
               <div className="ml-auto flex items-center">
                 <AiOutlineEye size={20} />
                 <p className="pl-1 text-sm">102K</p>
@@ -90,6 +91,9 @@ function VideoWindow() {
               </div>
             </div>
             <Comments />
+          </div>
+          <div className="p-3 basis-[35%]">
+            <SideSuggestions />
           </div>
         </div>
       </div>
