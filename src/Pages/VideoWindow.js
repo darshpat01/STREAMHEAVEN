@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import ReactPlayer from "react-player";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { RiShareForwardLine } from "react-icons/ri";
+import { AiOutlineLike } from "react-icons/ai";
 
 const gamingVideos = [
   {
@@ -64,13 +65,20 @@ function VideoWindow() {
               <div className="ml-auto">
                 <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
                   <div className="flex items-center">
+                    <AiOutlineLike />
+                    <p className="pl-2">12K</p>
+                  </div>
+                </button>
+              </div>
+              <div>
+                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
+                  <div className="flex items-center">
                     <RiShareForwardLine size={18} />
                     <p className="pl-2">Share</p>
                   </div>
                 </button>
               </div>
               <div>
-                {/* make the button the same height as other buttons */}
                 <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
                   <FiMoreHorizontal />
                 </button>
