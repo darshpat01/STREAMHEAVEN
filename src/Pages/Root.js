@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar/Navbar";
 
 function Root() {
@@ -9,6 +10,7 @@ function Root() {
       <div className="bg-darkmode text-white">
         <Outlet />
       </div>
+      <Footer />
     </>
   );
 }
