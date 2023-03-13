@@ -23,7 +23,7 @@ function CommentItem() {
                 <p className="text-sm text-gray-500 pl-1">1 day ago</p>
               </div>
               <div>
-                <p className="text-sm text-gray-700">Lorem ipsum </p>
+                <p className="text-sm text-gray-200 pb-1">Lorem ipsum </p>
               </div>
               <div className="flex">
                 <div className="pr-3 flex items-center">

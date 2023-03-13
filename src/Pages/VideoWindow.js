@@ -6,28 +6,11 @@ import { RiShareForwardLine } from "react-icons/ri";
 import { AiOutlineLike, AiOutlineEye } from "react-icons/ai";
 import Comments from "../Components/Comments/Comments";
 import SideSuggestions from "../Components/SideSuggestions/SideSuggestions";
-
-const gamingVideos = [
-  {
-    id: 1,
-    title: "Gaming Video 1",
-    src: "https://www.youtube.com/embed/1Q8fG0TtVAY",
-    thumbnail: "https://i.ytimg.com/vi/1Q8fG0TtVAY/maxresdefault.jpg",
-  },
-  {
-    id: 2,
-    title: "Tesla Model X PLAID v Ferrari SF90 v Lambo SVJ: DRAG RACE",
-    src: "https://www.youtube.com/embed/1Q8fG0TtVAY",
-    thumbnail: "https://i.ytimg.com/vi/1Q8fG0TtVAY/maxresdefault.jpg",
-    name: "Tenz",
-    dp: "https://prod.assets.earlygamecdn.com/images/tenz-valorfeed-settings.jpg?mtime=1651353441",
-    subs: "1.2M",
-  },
-];
+import Videos from "../videos.json";
 
 function VideoWindow() {
   const { id } = useParams();
-  const video = gamingVideos.find((video) => video.id === parseInt(id));
+  const video = Videos.find((video) => video.id === id);
 
   return (
     <>
@@ -36,17 +19,18 @@ function VideoWindow() {
           <div className="p-3 basis-[65%]">
             <div className="player-wrapper">
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=ysz5S6PUM-U"
+                url={video.src}
                 className="react-player"
                 width="100%"
                 height="100%"
+                controls={true}
               />
             </div>
             <div className="flex items-center pt-4">
               <h1 className="text-2xl font-semibold ">{video.title}</h1>
               <div className="ml-auto flex items-center">
                 <AiOutlineEye size={20} />
-                <p className="pl-1 text-sm">102K</p>
+                <p className="pl-1 text-sm">{video.views}</p>
               </div>
             </div>
             <div className="flex pt-2 items-center">
@@ -72,7 +56,7 @@ function VideoWindow() {
                 <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
                   <div className="flex items-center">
                     <AiOutlineLike />
-                    <p className="pl-2">12K</p>
+                    <p className="pl-2">{video.likes}</p>
                   </div>
                 </button>
               </div>
