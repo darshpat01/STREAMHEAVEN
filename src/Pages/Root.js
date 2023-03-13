@@ -6,7 +6,9 @@ function Root() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <div className="bg-darkmode text-white">
+        <Outlet />
+      </div>
     </>
   );
 }

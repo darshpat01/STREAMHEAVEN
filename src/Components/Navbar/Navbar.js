@@ -30,7 +30,7 @@ function Navbar() {
     }
   };
   return (
-    <div className="fixed w-[100%] z-40 bg-opacity-10 backdrop-blur-lg ">
+    <div className="fixed w-[100%] bg-darkmode z-40 text-white">
       <ul className="flex flex-row px-4 mx-auto xl:py-2 items-center">
         <div className="flex items-center">
           <span className="pr-3">
@@ -60,9 +60,18 @@ function Navbar() {
           onClick={() => handleClickScroll("Projects")}
           className="pl-8 w-[30%]"
         >
+          {/* purple search outline */}
           <InputGroup>
-            <InputLeftElement pointerEvents="none" children={<BsSearch />} />
-            <Input type="text" placeholder="Search" />
+            {/* puple outline search component */}
+            <InputLeftElement
+              pointerEvents="none"
+              children={<BsSearch size={20} />}
+            />
+            <Input
+              variant="outline"
+              placeholder="Search"
+              className="bg-darkmode text-white"
+            />
           </InputGroup>
         </NavItem>
         <NavItem className="ml-auto">
@@ -72,6 +81,7 @@ function Navbar() {
               aria-label="Options"
               variant="outline"
               colorScheme="purple"
+              _hover={{ bg: "gray.300" }}
               icon={<AiOutlineMessage size={20} />}
               className="flex items-center justify-center outline-none"
             />
@@ -107,6 +117,7 @@ function Navbar() {
               as={IconButton}
               aria-label="Options"
               variant="outline"
+              _hover={{ bg: "gray.300" }}
               colorScheme="purple"
               icon={<AiOutlineBell size={20} />}
               className="flex items-center justify-center outline-none"
