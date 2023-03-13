@@ -37,7 +37,7 @@ function Navbar() {
             <SiRiotgames size={20} />
           </span>
           <Link to="/">
-            <li className=" p-1 m-1 text-2xl pr-4 uppercase">CipherSchools</li>
+            <li className=" p-1 m-1 text-2xl pr-4 uppercase">STREAMHEAVEN</li>
           </Link>
         </div>
 
