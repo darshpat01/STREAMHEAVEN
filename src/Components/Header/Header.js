@@ -11,7 +11,7 @@ function Header() {
             play, compete, follow popular streamers
           </h1>
           <p className="text-xl pt-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            The best place to watch, play, and learn the games you love.
           </p>
         </div>
         <div className="basis-1/2 px-6">

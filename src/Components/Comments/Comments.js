@@ -27,6 +27,7 @@ function Comments() {
           likes="1.2k"
           dislikes="10"
           time="1 day ago"
+          dp="https://yt3.ggpht.com/tDhCnAwgOp32QNwJZ2WdizV1UFZlPthMJMWAbjpkFwtqcknZVsf2RK8vMJ4HPGJH8MDSSQuh=s176-c-k-c0x00ffffff-no-rj"
         />
         <CommentItem
           comm="his is why  i like tenz he is pro  and  humble"
@@ -34,6 +35,7 @@ function Comments() {
           likes="10k"
           dislikes="2"
           time="10 day ago"
+          dp="https://yt3.ggpht.com/imQyqD03QBUd5hpySnE4aROjudgjl86__Z9mlkpoLWz2KCgqsXyUHOeWJrS0Asw9xUV7DtcROw=s176-c-k-c0x00ffffff-no-rj"
         />
         <CommentItem
           comm="What is the sensitivity and aiming line of the tenses?"
@@ -41,6 +43,7 @@ function Comments() {
           likes="100"
           dislikes="1"
           time="1 month ago"
+          dp="https://yt3.ggpht.com/ytc/AL5GRJWiSwIeCZ49atkYCnAYxSao4hjPvEWmvKWKFKdvWw=s176-c-k-c0x00ffffff-no-rj"
         />
         <CommentItem
           comm="Tenz makes every gun look like a vandal."
@@ -48,6 +51,7 @@ function Comments() {
           likes="20k"
           dislikes="10k"
           time="1 year ago"
+          dp="https://yt3.ggpht.com/ytc/AL5GRJUxLPVM5CCe1QIkvpLGH1P7E8U6cygQObVcerJiAA=s176-c-k-c0x00ffffff-no-rj"
         />
       </div>
     </>

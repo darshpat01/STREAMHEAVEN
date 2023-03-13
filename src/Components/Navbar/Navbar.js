@@ -175,7 +175,7 @@ function Navbar() {
           <div className="rounded-md border-4 border-purple-500 overflow-hidden">
             <img
               className=" h-8 w-8"
-              src="https://prod.assets.earlygamecdn.com/images/tenz-valorfeed-settings.jpg?mtime=1651353441"
+              src="https://avatars.githubusercontent.com/u/68650149?v=4"
               alt="profile"
             />
           </div>
