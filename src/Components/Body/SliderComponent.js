@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./Card";
 import Slider from "react-slick";
 
 function SliderComponent({ children }) {
@@ -34,7 +33,7 @@ function SliderComponent({ children }) {
         },
       },
       {
-        breakpoint: 1500,
+        breakpoint: 1900,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 1,
