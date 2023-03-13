@@ -48,12 +48,12 @@ function VideoWindow() {
                 </p>
               </div>
               <div>
-                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
+                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10 hover:opacity-80">
                   Subscribe
                 </button>
               </div>
               <div className="ml-auto">
-                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
+                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10 hover:opacity-80">
                   <div className="flex items-center">
                     <AiOutlineLike />
                     <p className="pl-2">{video.likes}</p>
@@ -61,7 +61,7 @@ function VideoWindow() {
                 </button>
               </div>
               <div>
-                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
+                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10 hover:opacity-80">
                   <div className="flex items-center">
                     <RiShareForwardLine size={18} />
                     <p className="pl-2">Share</p>
@@ -69,7 +69,7 @@ function VideoWindow() {
                 </button>
               </div>
               <div>
-                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10">
+                <button className="bg-purple-500 text-white px-4 py-2 rounded-full ml-4 h-10 hover:opacity-80">
                   <FiMoreHorizontal />
                 </button>
               </div>
