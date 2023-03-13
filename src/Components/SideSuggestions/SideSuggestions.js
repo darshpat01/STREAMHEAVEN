@@ -16,6 +16,7 @@ function SideSuggestions() {
               dp={video.dp}
               id={video.id}
               key={video.id}
+              views={video.views}
             />
           ))}
           {Videos.map((video) => (
@@ -26,6 +27,7 @@ function SideSuggestions() {
               dp={video.dp}
               id={video.id}
               key={video.id}
+              views={video.views}
             />
           ))}
         </div>
